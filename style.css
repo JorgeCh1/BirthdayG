@@ -1,0 +1,93 @@
+body {
+    background: linear-gradient(to right, #ff6f61, #ff9068);
+    color: white;
+    text-align: center;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    font-family: 'Arial', sans-serif;
+    overflow: hidden;
+}
+
+h1 {
+    font-size: 4rem;
+    margin-bottom: 20px;
+    animation: glow 1s infinite alternate, bounceIn 1s ease-out;
+}
+
+@keyframes glow {
+    from {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff0099, 0 0 40px #ff0099, 0 0 50px #ff0099;
+    }
+    to {
+        text-shadow: 0 0 20px #fff, 0 0 30px #ff0066, 0 0 40px #ff0066, 0 0 50px #ff0066;
+    }
+}
+
+p {
+    font-size: 1.5rem;
+    margin-bottom: 30px;
+    animation: fadeIn 2s ease-in;
+}
+
+.btn {
+    background-color: #ff4e50;
+    border: none;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    color: white;
+    border-radius: 50px;
+    transition: background-color 0.3s ease;
+    animation: bounceIn 1s ease-out;
+}
+
+.btn:hover {
+    background-color: #ff6666;
+}
+
+/* Animaciones */
+@keyframes bounceIn {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.1);
+        opacity: 1;
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+    }
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+/* Imagen animada */
+.animate-img {
+    width: 200px;
+    margin-bottom: 20px;
+    animation: rotateIn 1.5s ease-out;
+}
+
+@keyframes rotateIn {
+    from {
+        transform: rotate(-200deg);
+        opacity: 0;
+    }
+    to {
+        transform: rotate(0deg);
+        opacity: 1;
+    }
+}

@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>¡Feliz Cumpleaños!</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container text-center">
+        <div class="row">
+            <div class="col-md-6">
+                <img src="Untitled design (1).png" class="img-fluid animate-img" alt="Torta de cumpleaños">
+            </div>
+            <div class="col-md-6">
+                <img src="Untitled design (2).png" class="img-fluid animate-img" alt="Globos de cumpleaños">
+            </div>
+        </div>
+        <h1 class="animate-text">¡Feliz Cumpleaños!</h1>
+        <p>Que este día esté lleno de alegría y sorpresas.</p>
+        <a class="btn btn-primary animate-btn" href="#" onclick="document.getElementById('audio').play()">Reproducir Canción</a>
+    </div>
+
+    <!-- Audio de fondo -->
+    <audio id="audio" loop>
+        <source src="Hoy Es Tu Cumpleaños.mp3" type="audio/mpeg">
+        Tu navegador no soporta el elemento de audio.
+    </audio>
+
+    <!-- Bootstrap JS y dependencias -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
